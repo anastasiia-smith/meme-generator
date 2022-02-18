@@ -41,12 +41,38 @@ body {
 }
 
 main {
+  padding: 35px;
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 1fr;
 }
 
-.main__button,
+.main__input {
+  border: 1px solid #D5D4D8;  
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.75rem;
+  padding: 10px;
+  color: #0D0D0D;
+}
+
+.main__button {
+  grid-column: span 2;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 0;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.main__button:hover {
+  background: linear-gradient(90.41deg, #8525a5 1.14%, #b81bec 100%);
+}
+
 .main__image {
-  flex: 100%;
+  width: 100%;
+  max-width: 100%;
+  grid-column: span 2;
 }
