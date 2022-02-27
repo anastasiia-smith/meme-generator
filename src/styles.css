@@ -71,8 +71,45 @@ main {
   background: linear-gradient(90.41deg, #8525a5 1.14%, #b81bec 100%);
 }
 
+.main__meme {
+  position: relative;
+  grid-column: span 2;
+}
+
 .main__image {
   width: 100%;
   max-width: 100%;
-  grid-column: span 2;
+}
+
+.main__text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.main__text_bottom {
+  bottom: 0;
+}
+
+.main__text_top {
+  top: 0;
 }
