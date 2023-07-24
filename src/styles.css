@@ -35,11 +35,6 @@ body {
   font-size: 1.296875rem;
 }
 
-.header__project {
-  font-weight: 500;
-  font-size: 0.75rem;
-}
-
 main {
   padding: 35px;
   display: grid;
@@ -112,4 +107,11 @@ main {
 
 .main__text_top {
   top: 0;
+}
+
+@media screen and (min-device-width: 768px) {
+  .main__meme {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
